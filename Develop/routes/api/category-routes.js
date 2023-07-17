@@ -6,7 +6,9 @@ const { Category, Product } = require('../../models');
 router.get('/', async(req, res) => {  //function returns a promise with 'async'
   // find all categories
   // be sure to include its associated Products
-  const categories = await Category.findAll();  //await is used to pause the async function until a promise is fulfilled, and resumes after fulfill/reject
+  const categories = await Category.findAll({
+    include: [{model: Product}],
+  });  
 
   res.json(categories);
 

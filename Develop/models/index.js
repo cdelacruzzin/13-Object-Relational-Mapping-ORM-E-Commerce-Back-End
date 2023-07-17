@@ -9,15 +9,29 @@ const ProductTag = require('./ProductTag');
 //this sets up many to one relationship from Product to Category.
 //means each product belongs to one category
 Product.belongsTo(Category, {
-  foreignKey: 'productId',
+  foreignKey: 'category_id',
   onDelete: 'CASCADE',
 });
 
 // Categories have many Products
+Category.hasMany(Product, {
+  foreignKey: 'category_id',
+  onDelete: 'CASCADE',
+})
 
 // Products belongToMany Tags (through ProductTag)
+Product.hasMany(ProductTag, {
+  foreignKey: 'product_id',
+  onDelete: 'CASCADE',
+});
+
+ProductTag.belongsTo(Product, {
+  foreignKey: 'product_id',
+  onDelete: 'CASCADE',
+})
 
 // Tags belongToMany Products (through ProductTag)
+
 
 module.exports = {
   Product,
