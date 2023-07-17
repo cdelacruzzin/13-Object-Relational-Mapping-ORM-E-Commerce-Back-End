@@ -32,6 +32,16 @@ ProductTag.belongsTo(Product, {
 
 // Tags belongToMany Products (through ProductTag)
 
+ProductTag.hasMany(Tag, {
+  foreignKey: 'productTag_id',
+  onDelete: 'CASCADE',
+}),
+
+Tag.belongsTo(ProductTag, {
+  foreignKey: 'productTag_id',
+  onDelete: 'CASCADE',
+})
+
 
 module.exports = {
   Product,
