@@ -25,8 +25,17 @@ router.get('/:id', async (req, res) => {
 
 router.post('/', async (req, res) => {
   // create a new tag
-  const newTag = await Tag.create(req.body);
+  
+
+  try {
+    const newTag = await Tag.create(req.body,
+      {
+        include: [{model: Product}]
+      });
   res.json(newTag);
+  } catch (error) {
+    res.json(error);
+  }
 });
 
 router.put('/:id', async (req, res) => {

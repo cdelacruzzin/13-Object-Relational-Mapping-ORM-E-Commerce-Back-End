@@ -41,15 +41,6 @@ router.post('/', async (req, res) => {
     });
     res.json(newCat);
 
-
-
-
-
-
-
-
-
-
   } catch (error) {
     res.json(error);
   }
