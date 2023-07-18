@@ -20,10 +20,8 @@ Category.hasMany(Product, {
 })
 
 // Products belongToMany Tags (through ProductTag)
-
-Product.belongsToMany(Tag, {through: ProductTag});
-Tag.belongsToMany(Product, {through: ProductTag});
-
+Product.belongsToMany(Tag, { through: ProductTag, onDelete: 'CASCADE' });
+Tag.belongsToMany(Product, { through: ProductTag, onDelete: 'CASCADE' });
 
 
 // Tags belongToMany Products (through ProductTag)
