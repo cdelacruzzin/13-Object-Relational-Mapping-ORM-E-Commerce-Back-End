@@ -22,13 +22,13 @@ router.get('/:id', async (req, res) => {
     const singleCat = await Category.findByPk(req.params.id, {
       include:[{model: Product}]
     });
-    if(singleCat !== 0) {
-      res.status(200).send(singleCat)
+    if (singleCat) {
+      res.json(singleCat);
     } else {
-      res.status(404).send('category does not exist')
+      res.status(404).send('category not found');
     }
   } catch (error) {
-    res.json(error)
+    res.status(404).json(error)
   }
 
 });
@@ -41,8 +41,21 @@ router.put('/:id', (req, res) => {
   // update a category by its `id` value
 });
 
-router.delete('/:id', (req, res) => {
+router.delete('/:id', async (req, res) => {
   // delete a category by its `id` value
+  try {
+    const deleteCat = await Category.destroy({
+      where: {id: req.params.id}
+    });
+
+    if (deleteCat) {
+      res.json(deleteCat);
+    } else {
+      res.status(404).send('category not found');
+    }
+  } catch (error) {
+    res.status(404).json(error)
+  }
 });
 
 module.exports = router;
