@@ -14,6 +14,21 @@ This application is an E-Commerce backend server. It uses Express.js and Sequeli
   - Use PUT routes to update categories, products, or tags.
   - Use DELETE routes to delete categories, products, or tags.
 
+## Demo Links
+
+### Category Routes
+- **Watch Demo**: [View Video](https://drive.google.com/file/d/1zb9tcI0DzGadoe4uF1i_Uk_aeLQKAqxN/view)
+
+### Product Routes
+- **Watch Demo**: [View Video](https://drive.google.com/file/d/1Fqs2rjGYfM0DGePLp0ViNHxDWDy8-e8A/view)
+
+### Tag Routes
+- **Watch Demo**: [View Video](https://drive.google.com/file/d/1xrF_sz3siu9cZ_YtOoaoL_rTPNi90xK9/view)
+
+---
+
+This structure makes it easy for other developers or users to quickly navigate to the specific demos for different functionalities within your application.
+
 ## Installation
 - dotenv
 - express
