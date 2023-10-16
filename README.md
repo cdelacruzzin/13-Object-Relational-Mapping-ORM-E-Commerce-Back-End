@@ -17,13 +17,13 @@ This application is an E-Commerce backend server. It uses Express.js and Sequeli
 ## Demo Links
 
 ### Category Routes
-- **Watch Demo**: [View Video](https://drive.google.com/file/d/1zb9tcI0DzGadoe4uF1i_Uk_aeLQKAqxN/view)
+- **Click to Watch Demo**: [![Thumbnail Description or Alt Text](https://drive.google.com/uc?export=view&id=1IZ6599tMKmZxqoicB8yAdeaU75m0RHZa)](https://drive.google.com/file/d/1F56BhqxnNjkNBtZoBY8jt2lXDjMOpPlp/view?usp=drive_link)
 
 ### Product Routes
-- **Watch Demo**: [View Video](https://drive.google.com/file/d/1Fqs2rjGYfM0DGePLp0ViNHxDWDy8-e8A/view)
+- **Click to Watch Demo**:  [![Thumbnail Description or Alt Text](https://drive.google.com/uc?export=view&id=1qerjaBwZyWepsUisR7WU95EbsmlNjo5E)](https://drive.google.com/file/d/1LegsZZDFezhvUAboKBYStSzsfRZbrHfN/view?usp=drive_link)
 
 ### Tag Routes
-- **Watch Demo**: [View Video](https://drive.google.com/file/d/1xrF_sz3siu9cZ_YtOoaoL_rTPNi90xK9/view)
+- **Click to Watch Demo**:  [![Thumbnail Description or Alt Text](https://drive.google.com/uc?export=view&id=1939crtUhzej6F-nBctKwqqrlGZEJrlCm)](https://drive.google.com/file/d/1JLjmPcDvssgSdeR9qq2X9IyVvDL7Q-5W/view?usp=sharing)
 
 ---
 
